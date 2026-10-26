@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "pearl_loader",
+  "version": "${version}",
+  "name": "Pearl Loader",
+  "description": "Server-side: ender pearls keep their chunks loaded (stasis chambers), leave with the owner on logout and return on login.",
+  "authors": [
+    "qateralong"
+  ],
+  "license": "All Rights Reserved",
+  "icon": "assets/pearl_loader/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.qateralong.pearlloader.PearlLoader"
+    ]
+  },
+  "mixins": [
+    "pearl_loader.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
